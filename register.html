@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - MbudStore Premium</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">MbudStore</a>
+      <button class="menu-toggle" aria-label="Toggle Menu"><span class="menu-icon"></span></button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="sneakers.html" class="nav-link">Nike</a></li>
+          <li><a href="running.html" class="nav-link">Converse</a></li>
+          <li><a href="casual.html" class="nav-link">Adidas</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 14px;">Login</a>
+        <a href="register.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 14px;">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <main class="main-container flex-center">
+      <section class="section reveal pt-40 w-100" style="margin-top: 40px;">
+        <div class="card-form mx-auto">
+          <h2 class="text-center mb-24">Create an Account</h2>
+          <p class="text-center" style="margin-bottom: 32px;">Join MbudStore to purchase premium exclusive sneakers.</p>
+          <form id="registerForm">
+            <div class="form-group">
+              <label>Username</label>
+              <input id="regUsername" class="form-control" type="text" placeholder="Choose a username">
+              <div id="charCount" style="color: var(--text-muted); font-size: 12px; margin-top: 4px; text-align: right;">0 chars</div>
+              <div id="errRegUser" class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input id="regEmail" class="form-control" type="email" placeholder="you@example.com">
+              <div id="errRegEmail" class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label>Password</label>
+              <input id="regPass" class="form-control" type="password" placeholder="Minimum 6 characters">
+              <div id="errRegPass" class="form-error"></div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+            <div class="text-center mt-24" style="font-size: 14px; color: var(--text-secondary);">
+              Already have an account? <a href="login.html" style="color: #fff; text-decoration: underline;">Login here</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="brand">MbudStore</div>
+        <div class="footer-copy">© 2026 Copyright - MbudStore. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Specific script for character count handled in main.js, but we can ensure it works here too
+    document.addEventListener('DOMContentLoaded', () => {
+      const regUser = document.getElementById('regUsername');
+      const charCount = document.getElementById('charCount');
+      if(regUser && charCount) {
+        regUser.addEventListener('input', () => {
+          charCount.textContent = regUser.value.length + ' chars';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adidas Collection - MbudStore Premium</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">MbudStore</a>
+      <button class="menu-toggle" aria-label="Toggle Menu"><span class="menu-icon"></span></button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="sneakers.html" class="nav-link">Nike</a></li>
+          <li><a href="running.html" class="nav-link">Converse</a></li>
+          <li><a href="casual.html" class="nav-link active">Adidas</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 14px;">Login</a>
+        <a href="register.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 14px;">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <main class="main-container">
+      <section class="section reveal pt-40" style="margin-top: 40px;">
+        <div class="section-header">
+          <h2>Adidas Collection</h2>
+        </div>
+        <div class="shoe-grid">
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/casual1.jpg" alt="Adidas Yeezy Boost" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Adidas Yeezy Boost 350 V2 "Concord Gray"</div>
+              <div class="shoe-meta"><div class="shoe-price">$80</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/casual2.jpg" alt="Adidas Yeezy Boost" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Adidas Yeezy Boost 350 V2 "Hyperspace"</div>
+              <div class="shoe-meta"><div class="shoe-price">$110</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/casual3.jpg" alt="Adidas Yeezy Boost" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Adidas Yeezy Boost 350 V2 "Marsh"</div>
+              <div class="shoe-meta"><div class="shoe-price">$80</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/casual4.jpg" alt="Adidas Yeezy Boost" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Adidas Yeezy Boost 350 V2 "Ashblu"</div>
+              <div class="shoe-meta"><div class="shoe-price">$110</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/casual5.jpg" alt="Adidas Samba" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Adidas Samba "The OG"</div>
+              <div class="shoe-meta"><div class="shoe-price">$80</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/casual6.jpg" alt="Adidas Samba" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Adidas Samba OG "Brown Yellow"</div>
+              <div class="shoe-meta"><div class="shoe-price">$110</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/casual7.jpg" alt="Adidas Quantum" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Adidas Quantum Basketball "Gradient"</div>
+              <div class="shoe-meta"><div class="shoe-price">$80</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/casual8.jpg" alt="Adidas Quantum" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Adidas Quantum Basketball "Light Cream"</div>
+              <div class="shoe-meta"><div class="shoe-price">$110</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="card-form my-40" style="max-width: 600px;">
+          <h2 class="text-center mb-24">Purchase Item</h2>
+          <form id="purchaseForm">
+            <div class="form-group">
+              <label>Select Item</label>
+              <select id="itemSel" class="form-control">
+                <option>Adidas Yeezy Boost 350 V2 "Concord Gray"</option>
+                <option>Adidas Yeezy Boost 350 V2 "Hyperspace"</option>
+                <option>Adidas Yeezy Boost 350 V2 "Marsh"</option>
+                <option>Adidas Yeezy Boost 350 V2 "Ashblu"</option>
+                <option>Adidas Samba "The OG"</option>
+                <option>Adidas Samba OG "Brown Yellow"</option>
+                <option>Adidas Quantum Basketball "Gradient"</option>
+                <option>Adidas Quantum Basketball "Light Cream"</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quantity</label>
+              <input id="qty" type="number" class="form-control" value="1" min="1">
+              <div id="errQty" class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label>Payment Method</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="pay" value="card" checked> Card
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="pay" value="cod"> Cash on Delivery
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Proceed to Checkout</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="brand">MbudStore</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="sneakers.html">Sneakers</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy">© 2026 Copyright - MbudStore. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

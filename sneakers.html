@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nike Collection - MbudStore Premium</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- Global Site Header -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand">MbudStore</a>
+      <button class="menu-toggle" aria-label="Toggle Menu"><span class="menu-icon"></span></button>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="sneakers.html" class="nav-link active">Nike</a></li>
+          <li><a href="running.html" class="nav-link">Converse</a></li>
+          <li><a href="casual.html" class="nav-link">Adidas</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline" style="padding: 8px 16px; font-size: 14px;">Login</a>
+        <a href="register.html" class="btn btn-primary" style="padding: 8px 16px; font-size: 14px;">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <main class="main-container">
+      <section class="section reveal pt-40" style="margin-top: 40px;">
+        <div class="section-header">
+          <h2>Nike Collection</h2>
+        </div>
+        <div class="shoe-grid">
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/sneaker1.jpg" alt="Nike Air Jordan 1 Low Travis Scott Phantom Black" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Nike Air Jordan 1 Low Travis Scott "Phantom Black"</div>
+              <div class="shoe-meta"><div class="shoe-price">$1995</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/sneaker2.jpg" alt="Nike Air Jordan 1 High OG Pro Green" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Nike Air Jordan 1 High OG "Pro Green"</div>
+              <div class="shoe-meta"><div class="shoe-price">$110</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/sneaker3.jpg" alt="Nike SB Dunk Low White and Gum Yellow" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Nike SB Dunk Low "White and Gum Yellow"</div>
+              <div class="shoe-meta"><div class="shoe-price">$175</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/sneaker4.jpg" alt="Nike SB Dunk Low Pro Violet and Off Noir" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Nike SB Dunk Low Pro "Violet and Off Noir"</div>
+              <div class="shoe-meta"><div class="shoe-price">$150</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/sneaker5.jpg" alt="Nike Air Jordan 1 High OG Baroque Brown and Sail" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Nike Air Jordan 1 High OG "Baroque Brown and Sail"</div>
+              <div class="shoe-meta"><div class="shoe-price">$160</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/sneaker6.jpg" alt="Nike Air Jordan 1 High OG Shattered Backboard" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Nike Air Jordan 1 High OG "Shattered Backboard"</div>
+              <div class="shoe-meta"><div class="shoe-price">$220</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/sneaker7.jpg" alt="Nike Air Jordan 1 Low Sail and Gorden Harvest" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Nike Air Jordan 1 Low "Sail and Gorden Harvest"</div>
+              <div class="shoe-meta"><div class="shoe-price">$240</div></div>
+            </div>
+          </div>
+          <div class="shoe-card">
+            <div class="shoe-image-wrap"><img src="images/sneaker8.jpg" alt="Nike SB Dunk Low Black and Pink Rise" onerror="this.src=''; this.style.opacity=0;"></div>
+            <div class="shoe-info">
+              <div class="shoe-title">Nike SB Dunk Low "Black and Pink Rise"</div>
+              <div class="shoe-meta"><div class="shoe-price">$189</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="card-form my-40" style="max-width: 600px;">
+          <h2 class="text-center mb-24">Purchase Item</h2>
+          <form id="purchaseForm">
+            <div class="form-group">
+              <label>Select Item</label>
+              <select id="itemSel" class="form-control">
+                <option>Nike Air Jordan 1 Low Travis Scott "Phantom Black"</option>
+                <option>Nike Air Jordan 1 High OG "Pro Green"</option>
+                <option>Nike SB Dunk Low "White and Gum Yellow"</option>
+                <option>Nike SB Dunk Low Pro "Violet and Off Noir"</option>
+                <option>Nike Air Jordan 1 High OG "Baroque Brown and Sail"</option>
+                <option>Nike Air Jordan 1 High OG "Shattered Backboard"</option>
+                <option>Nike Air Jordan 1 Low "Sail and Gorden Harvest"</option>
+                <option>Nike SB Dunk Low "Black and Pink Rise"</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Quantity</label>
+              <input id="qty" type="number" class="form-control" value="1" min="1">
+              <div id="errQty" class="form-error"></div>
+            </div>
+            <div class="form-group">
+              <label>Payment Method</label>
+              <div class="radio-group">
+                <label class="radio-label">
+                  <input type="radio" name="pay" value="card" checked> Card
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="pay" value="cod"> Cash on Delivery
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Proceed to Checkout</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="brand">MbudStore</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="sneakers.html">Sneakers</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-copy">© 2026 Copyright - MbudStore. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
