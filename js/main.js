@@ -272,31 +272,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 8. Dark Silver Flakes Animation
-  const path = window.location.pathname.toLowerCase();
-  if (path.endsWith('index.html') || path.endsWith('login.html') || path.endsWith('register.html') || path.endsWith('/')) {
-    const flakesContainer = document.createElement('div');
-    flakesContainer.className = 'flakes-container';
-    document.body.prepend(flakesContainer);
-
-    const flakeCount = 60; // Total number of flakes
-    const fragment = document.createDocumentFragment();
-
-    for (let i = 0; i < flakeCount; i++) {
-      const flake = document.createElement('div');
-      flake.className = 'flake';
-      
-      // Randomize properties for a natural effect
-      const size = Math.random() * 5 + 2; // Size between 2px and 7px
-      flake.style.width = `${size}px`;
-      flake.style.height = `${size}px`;
-      
-      flake.style.left = `${Math.random() * 100}vw`; // Horizontal position
-      flake.style.animationDuration = `${Math.random() * 15 + 10}s`; // Fall speed 10s-25s
-      flake.style.animationDelay = `${Math.random() * 15}s`; // Delay start
-      
-      fragment.appendChild(flake);
-    }
-    flakesContainer.appendChild(fragment);
-  }
 });
