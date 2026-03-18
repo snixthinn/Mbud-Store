@@ -641,10 +641,16 @@ select.form-control {
   
   .site-header.menu-open .nav-actions {
     display: flex;
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
+    flex-direction: column;
+    width: 100%;
+    padding: 0 40px;
+    margin-top: auto;
+    margin-bottom: 40px;
+    gap: 16px;
+  }
+
+  .site-header.menu-open .nav-actions .btn {
+    width: 100%;
   }
 }
 
@@ -656,7 +662,7 @@ select.form-control {
   .shoe-grid {
     flex-direction: column;
     align-items: center;
-    gap: 40px; /* Ensure sufficient gap for shoe names to show */
+    gap: 56px; /* Enhanced gap for mobile legibility */
   }
   
   .shoe-card {
